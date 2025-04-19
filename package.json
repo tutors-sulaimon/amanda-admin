@@ -16,6 +16,7 @@
     "@strapi/plugin-users-permissions": "5.8.0",
     "@strapi/strapi": "5.8.0",
     "better-sqlite3": "11.3.0",
+    "cloudinary": "^2.6.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "pg": "^8.13.3",
