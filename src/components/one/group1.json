@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_one_group1s",
+  "info": {
+    "displayName": "priceLabels",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_information_additional_infos",
+  "info": {
+    "displayName": "AdditionalInfo"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    }
+  }
+}

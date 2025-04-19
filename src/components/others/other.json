@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_others_others",
+  "info": {
+    "displayName": "Items",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "prices": {
+      "type": "json"
+    }
+  }
+}

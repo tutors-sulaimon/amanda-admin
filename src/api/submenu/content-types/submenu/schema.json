@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submenus",
+  "info": {
+    "singularName": "submenu",
+    "pluralName": "submenus",
+    "displayName": "Submenu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "component",
+      "repeatable": true,
+      "component": "category-items.category"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-info"
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "note-info.note"
+    },
+    "tableInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table-info.table"
+    }
+  }
+}

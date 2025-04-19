@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_news",
+  "info": {
+    "singularName": "menu-new",
+    "pluralName": "menu-news",
+    "displayName": "Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.main-component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

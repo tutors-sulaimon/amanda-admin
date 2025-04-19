@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_bocadillos_bocadillos_extras",
+  "info": {
+    "displayName": "BocadillosItems",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "priceLabel": {
+      "displayName": "group1",
+      "type": "component",
+      "repeatable": false,
+      "component": "one.group1"
+    },
+    "others": {
+      "displayName": "other",
+      "type": "component",
+      "repeatable": true,
+      "component": "others.other"
+    }
+  }
+}

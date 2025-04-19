@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_main_main_components",
+  "info": {
+    "displayName": "MainComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "component",
+      "repeatable": true,
+      "component": "category-items.category"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-info"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-image.images"
+    },
+    "BocadillosItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bocadillos.bocadillos-extra"
+    }
+  }
+}

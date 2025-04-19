@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_table_info_tables",
+  "info": {
+    "displayName": "table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    }
+  }
+}
