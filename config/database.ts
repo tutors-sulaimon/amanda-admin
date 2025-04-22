@@ -18,53 +18,53 @@
     // });
 
 
-// export default ({ env }) => ({
-//   connection: {
-//     client: 'postgres',
-//     connection: {
-//       host: env('PGHOST'),
-//       port: env.int('PGPORT'),
-//       database: env('PGDATABASE'),
-//       user: env('PGUSER'),
-//       password: env('PGPASSWORD'),
-//       schema: env('DATABASE_SCHEMA', 'public'),
-//       ssl: {
-//         rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
-//       },
-//     },
-//     debug: false,
-//     pool: {
-//       min: 2,
-//       max: 10,
-//     },
-//   },
-// });
-
-
 export default ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('PGHOST', 'localhost'),
-      port: env.int('PGPORT', 5432),
-      database: env('PGDATABASE', 'postgres'),
-      user: env('PGUSER', 'postgres'),
-      password: env('PGPASSWORD', ''),
+      host: env('PGHOST'),
+      port: env.int('PGPORT'),
+      database: env('PGDATABASE'),
+      user: env('PGUSER'),
+      password: env('PGPASSWORD'),
       schema: env('DATABASE_SCHEMA', 'public'),
-      ssl: env.bool('DATABASE_SSL', true)
-        ? {
-            rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
-          }
-        : false,
+      ssl: {
+        rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
+      },
     },
+    debug: false,
     pool: {
       min: 2,
       max: 10,
     },
-    acquireConnectionTimeout: 20000,
-    debug: false,
   },
 });
+
+
+// export default ({ env }) => ({
+//   connection: {
+//     client: 'postgres',
+//     connection: {
+//       host: env('PGHOST', 'localhost'),
+//       port: env.int('PGPORT', 5432),
+//       database: env('PGDATABASE', 'postgres'),
+//       user: env('PGUSER', 'postgres'),
+//       password: env('PGPASSWORD', ''),
+//       schema: env('DATABASE_SCHEMA', 'public'),
+//       ssl: env.bool('DATABASE_SSL', true)
+//         ? {
+//             rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
+//           }
+//         : false,
+//     },
+//     pool: {
+//       min: 2,
+//       max: 10,
+//     },
+//     acquireConnectionTimeout: 20000,
+//     debug: false,
+//   },
+// });
 
 
 
