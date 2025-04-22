@@ -34,12 +34,12 @@ export default ({ env }) => ({
     },
     debug: false,
     pool: {
-      min: 2,
-      max: 10,
+      min: 5,
+      max: 20,
     },
+    acquireConnectionTimeout: 30000, 
   },
 });
-
 
 // export default ({ env }) => ({
 //   connection: {
