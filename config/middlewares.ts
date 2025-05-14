@@ -1,23 +1,39 @@
 export default [
-  "strapi::logger",
-  "strapi::errors",
-  "strapi::security",
-  "strapi::cors",
-  "strapi::poweredBy",
-  "strapi::query",
-  "strapi::body",
-  "strapi::session",
-  "strapi::favicon",
-  "strapi::public",
-  "strapi::cors", // Ensure this line is included
+  'strapi::logger',
+  'strapi::errors',
   {
-    name: "strapi::cors",
+    name: 'strapi::security',
     config: {
-      enabled: true,
-      origin: ["http://localhost:5173"], // Allow requests from your frontend
-      methods: ["GET", "POST", "PUT", "DELETE"],
-      headers: ["Content-Type", "Authorization"],
-      credentials: true,
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'connect-src': ["'self'", 'https:'], 
+          'img-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
+          'media-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
+          headers: [
+          'Content-Type',
+          'Authorization',
+          'Origin',
+          'Accept',
+          'X-Requested-With'
+      ],
+          upgradeInsecureRequests: null,
+        },
+      },
     },
   },
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      origin: ['https://kioscoamanda.netlify.app', 'https://amanda-admin.onrender.com'], 
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    },
+  },
+  'strapi::poweredBy',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
 ];
